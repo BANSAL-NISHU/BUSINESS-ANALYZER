@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <title>CUSTOMER CHURN PREDICTION</title>
+</head>
+
+<body text="white">
+  <form action="/churn.html" method="post">
+<style>
+    body {
+      background-image: url({{url_for('static', filename='1.jpg')}});
+      background-repeat: no-repeat;
+      background-attachment: fixed;  
+      background-size: cover;
+    }
+</style>   
+
+ <div class="login">
+  <br>
+	<center><h1>CUSTOMER CHURN PREDICTION</h1></center>
+  <br><br><br><br>
+  <h3>
+    <center>
+      <input type="checkbox" id="SeniorCitizen" name="SeniorCitizen" value=1>
+      <label for="SeniorCitizen"> Senior Citizen </label> &nbsp;&nbsp;&nbsp;
+      <input type="checkbox" id="Partner" name="Partner" value=1>
+      <label for="Partner">Has a partner</label> &nbsp;&nbsp;&nbsp;
+      <input type="checkbox" id="Dependents" name="Dependents" value=1>
+      <label for="Dependents">Has dependents</label>&nbsp;&nbsp;&nbsp;
+      <input type="checkbox" id="PaperlessBilling" name="PaperlessBilling" value=1>
+      <label for="PaperlessBilling">Paperless Billing</label>&nbsp;&nbsp;&nbsp;
+      <input type="checkbox" id="PhoneService" name="PhoneService" value=1>
+      <label for="PhoneService">Phone Service</label>&nbsp;&nbsp;&nbsp;
+      <input type="checkbox" id="MultipleLines" name="MultipleLines" value=1>
+      <label for="MultipleLines">Multiple Lines</label>
+    </center>
+    <br><br>
+
+    <center>
+      <input type="checkbox" id="OnlineSecurity" name="OnlineSecurity" value=1>
+      <label for="OnlineSecurity">Online Security</label>&nbsp;&nbsp;&nbsp;
+      <input type="checkbox" id="OnlineBackup" name="OnlineBackup" value=1>
+      <label for="OnlineBackup">Online Backup</label>&nbsp;&nbsp;&nbsp;
+      <input type="checkbox" id="DeviceProtection" name="DeviceProtection" value=1>
+      <label for="DeviceProtection">Device Protection</label>&nbsp;&nbsp;&nbsp;
+      <input type="checkbox" id="TechSupport" name="TechSupport" value=1>
+      <label for="TechSupport">Tech Support</label>&nbsp;&nbsp;&nbsp;
+      <input type="checkbox" id="StreamingTV" name="StreamingTV" value=1>
+      <label for="StreamingTV">Streaming TV</label>&nbsp;&nbsp;&nbsp;
+      <input type="checkbox" id="StreamingMovies" name="StreamingMovies" value=1>
+      <label for="StreamingMovies">Streaming Movies</label>
+     </center>
+     <br><br>
+
+    <center>
+      <label for="Gender"> Gender: </label>
+        <select id="Gender" name="Gender">
+            <option value="" selected>Gender</option>
+            <option value=0> Male </option>
+            <option value=1> Female </option>
+        </select> &nbsp;&nbsp;
+
+      <label for="InternetService">Internet Service: </label>
+      	<select id="InternetService" name="InternetService">
+            <option value="" selected>Internet Service</option>
+        		<option value=0>No</option>
+        		<option value=1>DSL</option>
+            <option value=2>Fiber optic</option>
+        </select> &nbsp;&nbsp;
+      </center>
+<br><br>
+<center>
+		<input type="number"  min="0" name="MonthlyCharges" placeholder="Monthly Charges" required="required" />
+    <input type="number"  min="0" name="Tenure" placeholder="Tenure in Months" required="required" />
+</h3>
+</center>
+<br><br>
+
+<center>
+  <button type="Submit" class="btn btn-primary btn-block btn-large" style="height:40px;width:250px">Predict</button>
+</center>
+</form>
+ </div>
+
+
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+     integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</form>
+</body>
+</html>

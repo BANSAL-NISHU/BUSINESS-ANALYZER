@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home</title>
+        <meta charset="UTF-8">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/Style.css')}}">
+    </head>
+    <body>
+        <style>
+            body {
+                background-image: url({{url_for('static', filename='1.jpg')}});
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+            }
+        </style>
+        <font color="white">
+        <center>
+        <br>
+        <h1>BUSINESS ANALYZER</h1>
+        <br>
+        The project aims to build two predictive models using machine learning. <br>
+        The first model will forecast the sales of a Big Mart company and <br>
+        the second model will predict whether a customer will churn or not in any Telecom company.
+        <br><br>
+        <h2><a href="sales.html">SALES FORECASTING</a></h2>
+        <br>
+        <h2><a href="churn.html">CUSTOMER CHURN PREDICTION</a></h2>
+        </center>
+        </font>
+    </body>
+</html>
