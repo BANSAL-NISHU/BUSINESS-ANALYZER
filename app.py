@@ -6,8 +6,8 @@ import os
 app = Flask(__name__)
 
 # loading the saved model
-sf = pickle.load(open('C:/Users/NISHU/Desktop/BUSINESS-ANALYZER/sf.pkl', 'rb'))
-ccp = pickle.load(open('C:/Users/NISHU/Desktop/BUSINESS-ANALYZER/ccp.pkl', 'rb'))
+sf = pickle.load(open('sf.pkl', 'rb'))
+ccp = pickle.load(open('ccp.pkl', 'rb'))
 
 @app.route('/')
 def home():
