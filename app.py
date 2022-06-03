@@ -6,7 +6,7 @@ import os
 app = Flask(__name__)
 
 # loading the saved model
-sf = pickle.load(open('sf.sav', 'rb'))
+sf = pickle.load(open('sf.pkl', 'rb'))
 ccp = pickle.load(open('ccp.pkl', 'rb'))
 
 @app.route('/')
